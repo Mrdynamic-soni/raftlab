@@ -1,0 +1,50 @@
+<div class="container-fluid mt-2 " id="addfile">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <h1 class="text-center main-heading txt py-5" style=" text-shadow: 2px 2px 5px #b3afaf;">Add a new Book or
+                Magazine</h1>
+        </div>
+        <div class="col-md-10 col-12 mx-auto">
+            <section>
+                <div class="container py-5 " style="max-width: 1200px;">
+                    <div class="row">
+                        <div class="col-12 col-sm-7 col-md-6 m-auto">
+                            <div class="card border-0 shadow">
+                                <div class="card-body">
+                                    <form action="/addfile" method="POST">
+                                        {{!-- title,isbn,authors,description --}}
+                                        <h4>Title</h4>
+                                        <input type="text" name="title" id="title" class="form-control my-4 py-2"
+                                            placeholder="Title of Book or Magazine" />
+                                        <h4>ISBN Number</h4>
+                                        <input type="text" name="isbn" id="isbn" class="form-control my-4 py-2"
+                                            placeholder="ISBN Number" />
+                                        <h4>Auther</h4>
+                                        <input type="text" name="Auther" id="Auther" class="form-control my-4 py-2"
+                                            placeholder="Auther" />
+                                        <div class="t mt-3">
+                                            <h4>Description/Published At</h4>
+                                            <input type="text" name="Description" id="Description"
+                                                class="form-control my-4 py-2" placeholder="Description/Published At" />
+                                            <p>*Check if you adding a book</p>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="book"
+                                                    id="book">
+                                                <label class="form-check-label" for="book">
+                                                    Books
+                                                </label>
+                                            </div>
+                                            <div class="t mt-3">
+                                                <button class="btn-secondary rounded-pill py-2 px-3">Add File</button>
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</div>
